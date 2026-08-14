@@ -430,5 +430,6 @@ await writeArtifactMetadata({
   sourceHash,
   wasmPackBinary
 });
+await copyFile(tarball, path.join(repoRoot, "cedarling.tgz"));
 
 console.log(`Created ${path.relative(repoRoot, tarball)}`);

@@ -27,3 +27,6 @@ Generated source trees and tools remain ignored. Only the packaged artifacts
 and their metadata are committed. This repository is never published or pushed
 by the automation in this checkout.
 
+`cedarling.tgz` is a byte-identical short alias for the current versioned
+tarball. Consumers pin that path to a full commit so pnpm does not derive an
+overlong store filename from the descriptive artifact path.

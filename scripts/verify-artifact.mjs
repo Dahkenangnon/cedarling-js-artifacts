@@ -52,6 +52,9 @@ const tarball = path.join(artifactRoot, provenance.artifact.file);
 if ((await sha256File(tarball)) !== provenance.artifact.sha256) {
   throw new Error("Artifact checksum does not match provenance");
 }
+if ((await sha256File(path.join(repoRoot, "cedarling.tgz"))) !== provenance.artifact.sha256) {
+  throw new Error("Short artifact alias does not match provenance");
+}
 
 const checksumLines = (await readFile(path.join(artifactRoot, "SHA256SUMS"), "utf8"))
   .trim()
