@@ -1,0 +1,16 @@
+{
+  "name": "cedarling-js-artifacts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reproducible pre-publication snapshots of the Cedarling JavaScript SDK",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "snapshot": "node scripts/build-snapshot.mjs && node scripts/verify-artifact.mjs",
+    "verify": "node scripts/verify-artifact.mjs"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}
+

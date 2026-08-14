@@ -1,0 +1,47 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "cedarling-js-0.0.0-snapshot.c1c73bf90047.0c3066b2f8b3",
+  "documentNamespace": "https://github.com/Dahkenangnon/cedarling-js-artifacts/spdx/0.0.0-snapshot.c1c73bf90047.0c3066b2f8b3/0c3066b2f8b3681b939016633318faa21d836cd669b5b25e0d0c35fd5b46fda8",
+  "creationInfo": {
+    "created": "2026-08-14T14:12:20.671Z",
+    "creators": [
+      "Tool: cedarling-js-artifacts/build-snapshot.mjs"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-Cedarling",
+      "name": "@janssenproject/cedarling",
+      "versionInfo": "0.0.0-snapshot.c1c73bf90047.0c3066b2f8b3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "supplier": "Organization: Janssen Project"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Cedarling-Wasm",
+      "name": "@janssenproject/cedarling_wasm",
+      "versionInfo": "0.0.0-snapshot.c1c73bf90047.0c3066b2f8b3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "supplier": "Organization: Janssen Project"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-Cedarling"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Cedarling",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-Cedarling-Wasm"
+    }
+  ]
+}

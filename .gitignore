@@ -1,0 +1,6 @@
+/.tools/
+/node_modules/
+/work/
+*.log
+!/artifacts/
+!/artifacts/**
